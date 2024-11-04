@@ -1,8 +1,29 @@
 ## Getting Started
+
+>[!NOTE]
+> This backend serves as a server to [Figgi.io client](https://github.com/SaifuddinSaifee/figgi.io), please setup the client first.
+
 1. Clone the repo
-```commandline
-git clone https://github.com/SaifuddinSaifee/figgi-io-backend.git
-```
+    ```commandline
+    git clone https://github.com/SaifuddinSaifee/figgi-io-backend.git
+    ```
+
+2. Create a virtual Environment
+To create a Python virtual environment, follow these steps:
+
+     ```bash
+     python3 -m venv .venv
+    ```
+
+   - On macOS/Linux:
+     ```bash
+     source .venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     .\.venv\Scripts\activate
+     ```
+
 2. install the dependencies
 ```commandline
 pip install -r requirements.txt
@@ -12,8 +33,6 @@ pip install -r requirements.txt
 ```commandline
 uvicorn app.main:app --reload --port 8000
 ```
-
-
 
 ## Project Structure
 ```commandline
